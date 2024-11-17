@@ -1,9 +1,13 @@
 import './style.css';
 
+import Card from './sections/Card';
+import Content from './sections/Content';
+
 function App() {
   return (
-    <div className="App">
-      <h1>Hello World</h1>
+    <div className="col-12-8-4">
+      <Card/>
+      <Content/>
     </div>
   );
 }

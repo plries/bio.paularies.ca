@@ -1,0 +1,45 @@
+a.work-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    border-bottom: $dark-grey 2px solid;
+    transition: background-color 0.25s ease;
+
+    &:first-child {
+        border-top: $dark-grey 2px solid;
+    }
+
+    span {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 12px;
+        transition: scale 0.25s ease;
+        transform-origin: left;
+
+        img {
+            width: $fs-xxs;
+            user-select: none;
+        }
+    }
+
+    .arrow-icon {
+        user-select: none;
+        transition: transform 0.25s ease;
+    }
+
+    &:hover {
+        background-color: $darker-grey;
+        
+        span {
+            scale: 0.95;
+        }
+
+        .arrow-icon {
+            transform: rotate(-45deg);
+        }
+    }
+
+}

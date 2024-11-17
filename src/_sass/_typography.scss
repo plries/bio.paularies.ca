@@ -1,0 +1,47 @@
+:root {
+    font-family: $wix;
+    color: $black;
+    font-size: 62.5%;
+}
+
+html {
+    font-size: 110%;
+}
+
+h1 {
+    font-family: $rubik;
+    font-size: $fs-xxxxl;
+    font-weight: 500;
+    letter-spacing: -0.15rem;
+}
+
+h2 {
+    font-family: $rubik;
+    font-size: $fs-xxl;
+    font-weight: 500;
+    letter-spacing: -0.25rem;
+}
+
+p {
+    color: $grey;
+    font-size: $fs-xxs;
+    
+    strong {
+        color: $light-grey;
+    }
+}
+
+a {
+    font-size: $fs-xxs;
+    font-family: $mono;
+    color: $white;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1440px) {
+
+    h1 {
+        font-size: $fs-xxxl;
+    }
+    
+}

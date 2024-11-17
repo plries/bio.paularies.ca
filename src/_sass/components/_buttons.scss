@@ -1,0 +1,70 @@
+.btn {
+    font-family: $mono;
+    color: $white;
+    padding: 8px 12px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: fit-content;
+
+    img {
+        object-fit: cover;
+        width: $fs-xxs;
+        user-select: none;
+        transition: all 0.5s ease;
+    }
+}
+
+p.green {
+    background-color: $green;
+    border: 2px solid $green-outline;
+    
+    &:hover {
+        img {
+            transform: rotate(360deg);
+        }
+    }
+}
+
+p.blue {
+    background-color: $blue;
+    border: 2px solid $blue-outline;
+
+    &:hover {
+        img {
+            scale: 0.75;
+        }
+    }
+}
+
+a.black {
+    background-color: $black;
+    border: 2px solid $dark-grey;
+    width: auto;
+    transition: scale 0.25s ease;
+
+    &:hover {
+        scale: 0.975
+    }
+}
+
+.share-button {
+    width: $fs-xs;
+    height: $fs-xs;
+    padding: 0;
+    background-color: unset;
+    border: unset;
+    transition: scale 0.25s ease;
+    cursor: pointer;
+
+    img {
+        user-select: none;
+        width: 100%;
+        height: 100%;
+    }
+
+    &:hover {
+        scale: 0.9
+    }
+}
