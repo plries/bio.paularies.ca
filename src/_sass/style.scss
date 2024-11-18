@@ -13,8 +13,30 @@
 html {
     width: 100vw;
     height: 100%;
-    padding: 16px 0;
     display: grid;
     place-items: center;
     background-color: $black;
+}
+
+:root {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+
+::-moz-selection {
+    color: $white;
+    background: #202020BF;
+}
+
+::selection {
+    color: $white;
+    background: #202020BF;
+}
+
+.content {
+    ::selection {
+        color: $black;
+        background: #FAF9F6BF;
+    }
 }

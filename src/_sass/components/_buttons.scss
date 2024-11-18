@@ -68,3 +68,14 @@ a.black {
         scale: 0.9
     }
 }
+
+@media screen and (max-width: 425px) {
+
+    .btn {
+        
+        img {
+            width: $fs-xxxs;
+        }
+    }
+    
+}

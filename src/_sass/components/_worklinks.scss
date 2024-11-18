@@ -26,6 +26,7 @@ a.work-link {
     }
 
     .arrow-icon {
+        width: $fs-xxs;
         user-select: none;
         transition: transform 0.25s ease;
     }
@@ -42,4 +43,22 @@ a.work-link {
         }
     }
 
+}
+
+@media screen and (max-width: 425px) {
+
+    a.work-link {
+
+        span {
+            img {
+                width: $fs-xxxs;
+            }
+        }
+
+        .arrow-icon {
+            width: $fs-xxxs;
+        }
+            
+    }
+    
 }

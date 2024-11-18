@@ -45,3 +45,32 @@ a {
     }
     
 }
+
+@media screen and (max-width: 768px) {
+
+    h1 {
+        font-size: $fs-xxl;
+    }
+
+    h2 {
+        font-size: $fs-lg;
+        letter-spacing: -0.1rem;
+    }
+    
+}
+
+@media screen and (max-width: 425px) {
+
+    h1 {
+        font-size: $fs-xl;
+    }
+
+    h2 {
+        font-size: $fs-md;
+    }
+
+    p, a {
+        font-size: $fs-xxxs;
+    }
+    
+}
