@@ -1,0 +1,85 @@
+@keyframes modal-fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes modal-slide-in {
+    from {
+        transform: translateY(15%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes modal-slide-out {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-10%);
+    }
+}
+
+@keyframes modal-fade-out {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.modal-container {
+    background-color: $black;
+    border: $darker-grey 2px solid;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    margin: 16px;
+    gap: 16px;
+    padding: 16px;
+
+    .qr-container {
+        color: $dark-grey;
+        aspect-ratio: 1 / 1;
+
+        img {
+            width: 100%;
+            height: 100%;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            border-radius: 12px;
+        }
+    }
+
+    .btn-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+
+        div {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 16px;
+
+            .black,
+            .white {
+                &:hover {
+                    scale: 0.925;
+                }
+            }
+        }
+
+
+    }
+}

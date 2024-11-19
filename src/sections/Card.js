@@ -1,8 +1,9 @@
+import Modal from '../sections/Modal';
+
 import paul from '../media/paul.jpg'
 
 import star from '../icons/white-star.svg'
 import target from '../icons/white-target.svg'
-import share from '../icons/black-share.svg'
 
 import Button from '../components/Button';
 
@@ -11,26 +12,21 @@ function Card() {
         <div className="profile-card">
             <img src={paul} alt="headshot of paul aries." />
             <h1>paul aries</h1>
-            <div className="buttons-container">
+            <div className="btn-container">
                 <Button
                     color="btn green"
                     icon={star}
                     text="front-end developer"
+                    alt={"star icon."}
                 />
                 <Button
                     color="btn blue"
                     icon={target}
                     text="ux/ui designer"
+                    alt={"target icon."}
                 />
             </div>
-            <button
-                className="share-button"
-            >
-                <img
-                    src={share}
-                >
-                </img>
-            </button>
+            <Modal />
         </div>
     );
 }

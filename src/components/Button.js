@@ -1,13 +1,14 @@
-function Button({ color, icon, text }) {
+function Button({color, icon, text, alt}) {
     return (
         <p
-            className={ color }
+            className={color}
         >
             <img 
-                src={ icon }
+                src={icon}
+                alt={alt}
             >
             </img>
-            { text }
+            {text}
         </p>
     );
 }

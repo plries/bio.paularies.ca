@@ -10,11 +10,16 @@ function Work() {
         <div className="works-container">
 
             {workLinks.map((item) => (
-                <a href={item.url} target="_blank" className="work-link">
+                <a 
+                    key={item.name}
+                    href={item.url} 
+                    target="_blank"
+                    className="work-link"
+                >
                     <span>
                         <img
                             src={item.icon}
-                            alt={item.alt}
+                            alt={item.name + " icon."}
                         />
                         {item.name}
                     </span>

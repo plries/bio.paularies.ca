@@ -1,4 +1,4 @@
-a.work-link {
+.work-link {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -21,13 +21,19 @@ a.work-link {
 
         img {
             width: $fs-xxs;
-            user-select: none;
+            -webkit-user-select: none;
+               -moz-user-select: none;
+                -ms-user-select: none;
+                    user-select: none;
         }
     }
 
     .arrow-icon {
         width: $fs-xxs;
-        user-select: none;
+        -webkit-user-select: none;
+           -moz-user-select: none;
+            -ms-user-select: none;
+                user-select: none;
         transition: transform 0.25s ease;
     }
 
@@ -47,7 +53,7 @@ a.work-link {
 
 @media screen and (max-width: 425px) {
 
-    a.work-link {
+    .work-link {
 
         span {
             img {

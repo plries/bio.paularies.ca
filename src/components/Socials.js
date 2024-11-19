@@ -11,12 +11,13 @@ function Socials() {
 
                 {socialLinks.map((item) => (
                     <a 
+                        key={item.name}
                         target="_blank" className="btn black"
                         href={item.url}
                     >
                         <img
                             src={item.icon}
-                            alt={item.icon + " icon."}
+                            alt={item.name + " icon."}
                         >
                         </img>
                         {item.name}

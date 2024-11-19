@@ -6,17 +6,23 @@
     display: flex;
     align-items: center;
     gap: 8px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
 
     img {
-        object-fit: cover;
+        -o-object-fit: cover;
+           object-fit: cover;
         width: $fs-xxs;
-        user-select: none;
+        -webkit-user-select: none;
+           -moz-user-select: none;
+            -ms-user-select: none;
+                user-select: none;
         transition: all 0.5s ease;
     }
 }
 
-p.green {
+.green {
     background-color: $green;
     border: 2px solid $green-outline;
     
@@ -27,7 +33,7 @@ p.green {
     }
 }
 
-p.blue {
+.blue {
     background-color: $blue;
     border: 2px solid $blue-outline;
 
@@ -38,18 +44,31 @@ p.blue {
     }
 }
 
-a.black {
+.black {
     background-color: $black;
     border: 2px solid $dark-grey;
     width: auto;
     transition: scale 0.25s ease;
 
     &:hover {
-        scale: 0.975
+        scale: 0.975;
     }
 }
 
-.share-button {
+.white {
+    background-color: $white;
+    border: 2px solid $white;
+    color: $black;
+    width: auto;
+    transition: scale 0.25s ease;
+
+    &:hover {
+        scale: 0.975;
+    }
+}
+
+.share-btn,
+.download-btn {
     width: $fs-xs;
     height: $fs-xs;
     padding: 0;
@@ -59,7 +78,10 @@ a.black {
     cursor: pointer;
 
     img {
-        user-select: none;
+        -webkit-user-select: none;
+           -moz-user-select: none;
+            -ms-user-select: none;
+                user-select: none;
         width: 100%;
         height: 100%;
     }
@@ -67,6 +89,16 @@ a.black {
     &:hover {
         scale: 0.9
     }
+}
+
+@media screen and (max-width: 768px) {
+
+    .share-btn,
+    .download-btn {
+        width: $fs-sm;
+        height: $fs-sm;
+    }
+    
 }
 
 @media screen and (max-width: 425px) {
