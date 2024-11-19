@@ -18,6 +18,7 @@ function Socials() {
                         <img
                             src={item.icon}
                             alt={item.name + " icon."}
+                            draggable="false"
                         >
                         </img>
                         {item.name}

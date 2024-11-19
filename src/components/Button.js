@@ -6,6 +6,7 @@ function Button({color, icon, text, alt}) {
             <img 
                 src={icon}
                 alt={alt}
+                draggable="false"
             >
             </img>
             {text}

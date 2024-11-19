@@ -1,4 +1,4 @@
-import MicroModal from 'react-micro-modal';
+import MicroModal from 'react-micro-modal'
 
 import QR from '../media/qr-code.png'
 
@@ -7,8 +7,11 @@ import download from '../icons/white-download.svg'
 
 function copyLink() {
 
-    const url = window.location.href;
-    navigator.clipboard.writeText(url);
+    const url = window.location.href
+    navigator.clipboard.writeText(url)
+
+    const button = document.querySelector('.white')
+    button.innerHTML = 'copied!'
     
 }
 
@@ -32,6 +35,7 @@ function Modal() {
                 <img 
                     src={share}
                     alt="share icon."
+                    draggable="false"
                 >
 
                 </img>
@@ -47,6 +51,7 @@ function Modal() {
                 >
                     <img
                         src={QR}
+                        draggable="false"
                     >
                     </img>
                 </div>
@@ -60,6 +65,7 @@ function Modal() {
                     >
                         <img
                             src={download}
+                            draggable="false"
                         >    
                         </img>
                     </a>

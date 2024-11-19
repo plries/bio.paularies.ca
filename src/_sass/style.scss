@@ -1,15 +1,16 @@
-@import "vendor/_normalize";
+@import "vendor/normalize";
 
-@import "_variables";
-@import "_scaffolding";
-@import "_typography";
+@import "variables";
+@import "scaffolding";
+@import "typography";
 
 @import "sections/card";
 @import "sections/content";
 @import "sections/modal";
 
-@import "components/_buttons";
-@import "components/_worklinks";
+@import "components/cursor";
+@import "components/buttons";
+@import "components/worklinks";
 
 html {
     width: 100vw;

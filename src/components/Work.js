@@ -20,6 +20,7 @@ function Work() {
                         <img
                             src={item.icon}
                             alt={item.name + " icon."}
+                            draggable="false"
                         />
                         {item.name}
                     </span>
@@ -27,6 +28,7 @@ function Work() {
                         className="arrow-icon"
                         src={arrow}
                         alt="arrow icon."
+                        draggable="false"
                     />
                 </a>
             ))}

@@ -10,7 +10,11 @@ import Button from '../components/Button';
 function Card() {
     return (
         <div className="profile-card">
-            <img src={paul} alt="headshot of paul aries." />
+            <img 
+                src={paul}
+                alt="headshot of paul aries."
+                draggable="false"
+            />
             <h1>paul aries</h1>
             <div className="btn-container">
                 <Button
