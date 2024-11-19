@@ -1,5 +1,7 @@
+// data
 import { Links } from '../data/links.js';
 
+// media
 import arrow from '../icons/white-arrow.svg'
 
 function Work() {

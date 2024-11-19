@@ -1,16 +1,19 @@
+// sections
 import Modal from '../sections/Modal';
 
-import paul from '../media/paul.jpg'
+// components
+import Button from '../components/Button';
 
+// media
+import paul from '../media/paul.jpg'
 import star from '../icons/white-star.svg'
 import target from '../icons/white-target.svg'
 
-import Button from '../components/Button';
 
 function Card() {
     return (
         <div className="profile-card">
-            <img 
+            <img
                 src={paul}
                 alt="headshot of paul aries."
                 draggable="false"

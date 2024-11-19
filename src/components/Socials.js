@@ -1,3 +1,4 @@
+// data
 import { Links } from '../data/links.js';
 
 function Socials() {

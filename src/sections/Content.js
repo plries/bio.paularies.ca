@@ -1,3 +1,4 @@
+// components
 import Work from '../components/Work'
 import Socials from '../components/Socials'
 

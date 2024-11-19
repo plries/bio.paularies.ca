@@ -39,7 +39,7 @@ function Cursor() {
                 duration: 0.1
             });
 
-            const addHoverEffect = (elements) => {
+            const hoverEffect = (elements) => {
                 Array.from(elements).forEach(element => {
                     element.addEventListener("mouseenter", function () {
                         hover.play();
@@ -50,7 +50,21 @@ function Cursor() {
                 });
             };
 
-            addHoverEffect(document.querySelectorAll("a, button"));
+            hoverEffect(document.querySelectorAll("a, button"));
+
+            // mutation observer watches for changes in the DOM
+            const observer = new MutationObserver(() => {
+                // when a mutation (DOM change) is made, reapply hover effects
+                hoverEffect(document.querySelectorAll("a, button"));
+            });
+
+            // starts observing the DOM
+            observer.observe(document.body, {
+                // watch for changes in child elements of <body>
+                childList: true,
+                // watches for changes in all decendants of <body>
+                subtree: true
+            })
 
         }
     }, []);

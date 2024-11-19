@@ -1,8 +1,12 @@
 import './style.css';
 
-import Cursor from './components/Cursor'
+// sections
 import Card from './sections/Card';
 import Content from './sections/Content';
+
+// components
+import Cursor from './components/Cursor'
+
 
 function App() {
   

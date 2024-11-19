@@ -1,18 +1,21 @@
 import MicroModal from 'react-micro-modal'
 
+// media
 import QR from '../media/qr-code.png'
-
 import share from '../icons/black-share.svg'
 import download from '../icons/white-download.svg'
 
 function copyLink() {
 
+    // get current url
     const url = window.location.href
+    // write it to clipboard
     navigator.clipboard.writeText(url)
 
+    // update button to show "copied!"
     const button = document.querySelector('.white')
     button.innerHTML = 'copied!'
-    
+
 }
 
 function Modal() {
@@ -26,66 +29,66 @@ function Modal() {
                     }
                 }
             }}
-            
-        trigger={(open) => 
-            <button
-                className="share-btn"
-                onClick={open}
-            >
-                <img 
-                    src={share}
-                    alt="share icon."
-                    draggable="false"
-                >
 
-                </img>
-            </button>
-
-        }>
-        {(close) => 
-            <div
-                className="modal-container"
-            >
-                <div
-                    className="qr-container"
+            trigger={(open) =>
+                <button
+                    className="share-btn"
+                    onClick={open}
                 >
                     <img
-                        src={QR}
+                        src={share}
+                        alt="share icon."
                         draggable="false"
                     >
+
                     </img>
-                </div>
+                </button>
+
+            }>
+            {(close) =>
                 <div
-                    className="btn-container"
+                    className="modal-container"
                 >
-                    <a 
-                        href={QR}
-                        download="paul-aries-qr-code.png"
-                        className="download-btn"
+                    <div
+                        className="qr-container"
                     >
                         <img
-                            src={download}
+                            src={QR}
                             draggable="false"
-                        >    
+                        >
                         </img>
-                    </a>
-                    <div>
-                        <button
-                            className="btn black"
-                            onClick={close}
+                    </div>
+                    <div
+                        className="btn-container"
+                    >
+                        <a
+                            href={QR}
+                            download="paul-aries-qr-code.png"
+                            className="download-btn"
                         >
-                            close
-                        </button>
-                        <button
-                            className="btn white"
-                            onClick={copyLink}
-                        >
-                            share
-                        </button>
+                            <img
+                                src={download}
+                                draggable="false"
+                            >
+                            </img>
+                        </a>
+                        <div>
+                            <button
+                                className="btn black"
+                                onClick={close}
+                            >
+                                close
+                            </button>
+                            <button
+                                className="btn white"
+                                onClick={copyLink}
+                            >
+                                share
+                            </button>
+                        </div>
                     </div>
                 </div>
-            </div>
-        }
+            }
         </MicroModal>
     )
 }
