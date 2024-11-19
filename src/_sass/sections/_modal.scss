@@ -46,7 +46,7 @@
 
     .qr-container {
         color: $dark-grey;
-        aspect-ratio: 1 / 1;
+        width: 400px;
 
         img {
             width: 100%;
@@ -82,4 +82,24 @@
 
 
     }
+}
+
+@media screen and (max-width: 768px) {
+    
+    .modal-container {
+        .qr-container {
+            width: 350px;
+        }
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+    
+    .modal-container {
+        .qr-container {
+            width: 250px;
+        }
+    }
+
 }
